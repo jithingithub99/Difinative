@@ -270,5 +270,39 @@ verify the reason why it got not completed and then delete the job
 
 WIP (Work in progress )
 
+ Get node details
+` kubectl get nodes `
+ 
+ ![image](https://user-images.githubusercontent.com/89779991/150082906-ccb26bcb-ed9f-40b2-ada3-5939275e21aa.png)
+
+
+ verify that all of the nodes you expect to see are present and that they are all in the Ready state.
+
+To get detailed information about the overall health of  cluster, we can run:
+kubectl cluster-info dump
+
+digging deeper into the cluster requires logging into the relevant machines.
+
+On MASTER nodes the locations of the relevant log files.
+
+Login to master nodes 
+
+To get API server logs go to below location 
+
+/var/log/kube-apiserver.log - API Server, responsible for serving the API
+
+ ![image](https://user-images.githubusercontent.com/89779991/150082876-fae64d54-1dc1-40ba-8f4e-eef8a779c5ab.png)
+
+
+tail -50  kube-apiserver-ip-xxxx.log
+
+look in to the logs and check 
+
+Related issue link
+
+https://github.com/kubermatic/kubermatic/pull/8727
+https://github.com/kubermatic/kubermatic/issues/7373
+
+
 
 
