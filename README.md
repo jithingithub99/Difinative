@@ -2,7 +2,7 @@
 
 + ### Run Service
   * **VSOC**
-    - [VSOC Architectural diagrams](/docs/VSOC%20Production%20Support/VSOC%20Architecture%20Documentation.docx)
+    - [VSOC Architectural diagrams](/docs/VSOC-Architecture-Documentation/VSOC_Architecture_Documentation.md)
     - [VSOC Production Support](/docs/VSOC%20Production%20Support/VSOC-Production-Support.md)
     - [Network connectivity Requirements from VSOC](#Network-connectivity-diagrams)
     - [VPN Monitoring](/docs/VSOC%20Production%20Support/VPN%20monitoring.docx)
